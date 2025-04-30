@@ -1,11 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import SubscriptionsList from './pages/SubscriptionsList/SubscriptionsList';
 import SubscriptionDetails from './pages/SubscriptionDetails/SubscriptionDetails';
+import './App.css'
 
 function App() {
   return (
-    <Router>
-      <div className="app-container">
+    <div className="app-container">
+      <Router>
         <header>
           <h2>Tea Subscription Dashboard</h2>
         </header>
@@ -13,8 +14,8 @@ function App() {
           <Route path="/" element={<SubscriptionsList />} />
           <Route path="/details/:id" element={<SubscriptionDetails />} />
         </Routes>
-      </div>
-    </Router>
+      </Router>
+    </div>
   );
 }
 

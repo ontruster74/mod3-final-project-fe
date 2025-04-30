@@ -1,8 +1,6 @@
 .filters {
-    display: flex;
     gap: 10px;
     margin-bottom: 20px;
-    flex-wrap: wrap;
 }
   
 .filter-button {
@@ -21,18 +19,19 @@
 }
   
 .subscription-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    margin:auto;
     gap: 20px;
 }
   
 .subscription-item {
     background-color: #fff;
     border: 1px solid #ddd;
-    padding: 15px;
+    padding: 15px 30px;
     border-radius: 6px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: row;
 }
   
 .subscription-item:hover {
@@ -40,7 +39,7 @@
 }
   
 .subscription-item img {
-    width: 100%;
+    width: 30%;
     height: auto;
     border-radius: 4px;
     margin-top: 10px;
@@ -58,9 +57,9 @@
 }
   
 .subscription-button.active {
-    background-color: #3b7d3b; /* earthy green */
+    background-color: #3b7d3b;
 }
   
 .subscription-button.cancelled {
-    background-color: #a4443f; /* clay red */
+    background-color: #a4443f;
 }  

@@ -1,4 +1,5 @@
 import './SubscriptionsList.css'
+import packageIcon from '../../assets/package.svg'
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -36,7 +37,7 @@ function SubscriptionsList() {
   return (
     <div>
       <h1>Subscriptions</h1>
-      <ul>
+      <ul className="subscription-list">
         {subscriptions.map((sub) => {
           const { id, attributes } = sub;
           const { title, status } = attributes;
@@ -46,7 +47,7 @@ function SubscriptionsList() {
               <Link to={`/details/${id}`}>
                 <div>
                   <strong>{title}</strong>
-                  <img src="../../assets/react.svg" alt="Subscription Icon" />
+                  <img src={packageIcon} alt="Subscription Icon" />
                 </div>
               </Link>
               <button
