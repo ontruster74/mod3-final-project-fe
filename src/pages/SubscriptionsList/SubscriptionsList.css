@@ -1,0 +1,33 @@
+.subscription-list {
+    list-style: none;
+    padding: 0;
+}
+  
+.subscription-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+  
+.subscription-item img {
+    margin-left: 10px;
+    vertical-align: middle;
+}
+  
+.subscription-button {
+    margin-top: 5px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+  
+.subscription-button.active {
+    background-color: green;
+}
+  
+.subscription-button.cancelled {
+    background-color: red;
+}
+  
