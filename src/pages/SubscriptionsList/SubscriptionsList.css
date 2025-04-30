@@ -1,33 +1,66 @@
+.filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+  
+.filter-button {
+    padding: 8px 14px;
+    border: 1px solid #aaa;
+    background-color: #eee;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+  
+.filter-button.selected {
+    background-color: #4b4b4b;
+    color: white;
+    border-color: #4b4b4b;
+}
+  
 .subscription-list {
-    list-style: none;
-    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
 }
   
 .subscription-item {
-    margin-bottom: 20px;
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+}
+  
+.subscription-item:hover {
+    transform: translateY(-2px);
 }
   
 .subscription-item img {
-    margin-left: 10px;
-    vertical-align: middle;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-top: 10px;
 }
   
 .subscription-button {
-    margin-top: 5px;
+    margin-top: 10px;
     padding: 8px 12px;
     border: none;
     border-radius: 4px;
     color: white;
+    font-weight: bold;
     cursor: pointer;
+    width: 100%;
 }
   
 .subscription-button.active {
-    background-color: green;
+    background-color: #3b7d3b; /* earthy green */
 }
   
 .subscription-button.cancelled {
-    background-color: red;
-}
-  
+    background-color: #a4443f; /* clay red */
+}  

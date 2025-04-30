@@ -5,7 +5,7 @@ import SubscriptionDetails from './pages/SubscriptionDetails/SubscriptionDetails
 function App() {
   return (
     <Router>
-      <div>
+      <div className="app-container">
         <header>
           <h2>Tea Subscription Dashboard</h2>
         </header>
