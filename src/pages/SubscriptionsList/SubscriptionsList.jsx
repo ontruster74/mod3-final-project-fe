@@ -37,7 +37,7 @@ function SubscriptionsList() {
     <div>
       <h1>Subscriptions</h1>
       <ul>
-        {subscriptions.map(sub => {
+        {subscriptions.map((sub) => {
           const { id, attributes } = sub;
           const { title, status } = attributes;
 
@@ -46,7 +46,7 @@ function SubscriptionsList() {
               <Link to={`/details/${id}`}>
                 <div>
                   <strong>{title}</strong>
-                  <img src="https://via.placeholder.com/50" alt="Subscription Icon" />
+                  <img src="../../assets/react.svg" alt="Subscription Icon" />
                 </div>
               </Link>
               <button

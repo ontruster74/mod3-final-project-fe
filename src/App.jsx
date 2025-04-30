@@ -5,7 +5,7 @@ import SubscriptionDetails from './pages/SubscriptionDetails/SubscriptionDetails
 function App() {
   return (
     <Router>
-      <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+      <div>
         <header>
           <h2>Tea Subscription Dashboard</h2>
         </header>

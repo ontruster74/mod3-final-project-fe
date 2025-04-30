@@ -14,25 +14,27 @@ function SubscriptionDetails() {
 
   if (!subscription) return <p>Loading...</p>;
 
-  const { title, price, frequency, customers, teas } = subscription.attributes;
+  const { title, price, frequency, status, customers, teas } = subscription.attributes;
 
   return (
     <div className="details-container">
       <h1>{title}</h1>
       <p>Price: ${price}</p>
       <p>Frequency: {frequency}</p>
+      <p>Status: {status}</p>
+
 
       <h3>Customers</h3>
       <ul>
-        {customers.map(c => (
-          <li key={c.id}>{c.name} ({c.email})</li>
+        {customers.map(customer => (
+          <li key={customer.id}>{customer.firstname} {customer.lastname} ({customer.email})</li>
         ))}
       </ul>
 
       <h3>Teas</h3>
       <ul>
-        {teas.map(t => (
-          <li key={t.id}>{t.name} - {t.description}</li>
+        {teas.map(tea => (
+          <li key={tea.id}>{tea.name} - {tea.description}</li>
         ))}
       </ul>
 
