@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 
 function SubscriptionsList() {
   const [subscriptions, setSubscriptions] = useState([]);
+  const [statusFilter, setStatusFilter] = useState('all');
 
   useEffect(() => {
     fetchSubscriptions();
@@ -34,11 +35,52 @@ function SubscriptionsList() {
       .catch(err => console.error(err));
   };
 
+  const filteredSubscriptions = subscriptions.filter(subscription => {
+    if (statusFilter === 'all') return true;
+
+    return subscription.attributes['status'] === statusFilter;
+  });
+  
   return (
     <div>
-      <h1>Subscriptions by Name - Admin View</h1>
+          
+      <h1>{statusFilter.toUpperCase()} Subscriptions by Name - Admin View</h1>
+        
+      <div className="filter-options">
+        <label>
+          <input
+            type="radio"
+            name="status"
+            value="all"
+            checked={statusFilter === 'all'}
+            onChange={(e) => setStatusFilter(e.target.value)}
+          />
+          All
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="status"
+            value="active"
+            checked={statusFilter === 'active'}
+            onChange={(e) => setStatusFilter(e.target.value)}
+          />
+          Active
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="status"
+            value="cancelled"
+            checked={statusFilter === 'cancelled'}
+            onChange={(e) => setStatusFilter(e.target.value)}
+          />
+          Cancelled
+        </label>
+      </div>
+
       <ul className="subscription-list">
-        {subscriptions.map((sub) => {
+        {filteredSubscriptions.map((sub) => {
           const { id, attributes } = sub;
           const { title, status } = attributes;
 
