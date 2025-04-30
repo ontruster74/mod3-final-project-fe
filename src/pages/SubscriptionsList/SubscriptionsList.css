@@ -22,6 +22,12 @@
     margin:auto;
     gap: 20px;
 }
+
+.subscription-list strong {
+    background-color: rgb(179, 108, 15);
+    color: black;
+    padding: 10px;
+}
   
 .subscription-item {
     background-color: #fff;
@@ -32,6 +38,10 @@
     transition: transform 0.2s ease;
     display: flex;
     flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 10px;
+    height: 50px;
 }
   
 .subscription-item:hover {
@@ -39,10 +49,9 @@
 }
   
 .subscription-item img {
-    width: 30%;
-    height: auto;
+    width: 3rem;
+    height: 3rem;
     border-radius: 4px;
-    margin-top: 10px;
 }
   
 .subscription-button {
@@ -53,9 +62,14 @@
     color: white;
     font-weight: bold;
     cursor: pointer;
-    width: 100%;
+    width: 80%;
 }
-  
+
+.subscription-name-icon {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
 .subscription-button.active {
     background-color: #3b7d3b;
 }

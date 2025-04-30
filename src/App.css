@@ -1,11 +1,12 @@
 .app-container {
   display: flex;
   flex-direction: column;
-  justify-content: center; 
-  align-items: flex-start;
-  align-content: center;
   text-align: center;  
   padding: 20px;
   min-height: 100vh;
   box-sizing: border-box;
+}
+
+.app-container header {
+  background-color: #3b7d3b;
 }

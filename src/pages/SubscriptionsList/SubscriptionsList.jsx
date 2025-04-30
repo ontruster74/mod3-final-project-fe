@@ -36,7 +36,7 @@ function SubscriptionsList() {
 
   return (
     <div>
-      <h1>Subscriptions</h1>
+      <h1>Subscriptions by Name - Admin View</h1>
       <ul className="subscription-list">
         {subscriptions.map((sub) => {
           const { id, attributes } = sub;
@@ -45,7 +45,7 @@ function SubscriptionsList() {
           return (
             <li key={id} className="subscription-item">
               <Link to={`/details/${id}`}>
-                <div>
+                <div className="subscription-name-icon">
                   <strong>{title}</strong>
                   <img src={packageIcon} alt="Subscription Icon" />
                 </div>

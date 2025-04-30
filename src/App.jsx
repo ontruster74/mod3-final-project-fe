@@ -8,7 +8,7 @@ function App() {
     <div className="app-container">
       <Router>
         <header>
-          <h2>Tea Subscription Dashboard</h2>
+          <h2>Tea Subscription Admin Portal</h2>
         </header>
         <Routes>
           <Route path="/" element={<SubscriptionsList />} />
