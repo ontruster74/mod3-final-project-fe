@@ -5,6 +5,10 @@ This project consists of two parts: a Rails API backend and a React frontend. It
 
 ![Frontend screenshot](FinalProject.PNG)
 
+Frontend Wireframe Structure:
+
+![FrontendWireframe](https://github.com/user-attachments/assets/7a47bd62-f858-49a1-91c5-574701c618f5)
+
 ---
 
 ## Contributors
