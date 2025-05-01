@@ -1,6 +1,12 @@
 # Tea Subscription Admin Portal
 
-This project consists of two parts: a **Rails API** backend and a **React** frontend. It is designed to manage subscriptions, associated customers, and teas.
+This project consists of two parts: a Rails API backend and a React frontend. It allows a hypothetical admin user to manage the status of a number of tea box subscriptions, and view each subscription's associated customers and teas.
+
+---
+
+## Contributors
+
+Rig Freyr - GitHub: https://github.com/ontruster74
 
 ---
 
@@ -15,12 +21,7 @@ This project consists of two parts: a **Rails API** backend and a **React** fron
 
 ### Backend (Rails API)
 
-1. **Clone the repository**:
-
-   ```bash
-   git clone <your-repository-url>
-   cd <your-project-folder>/backend
-   ```
+1. **Clone the backend repo at https://github.com/ontruster74/mod3-final-project-be**:
 
 2. **Install dependencies**:
 
@@ -48,11 +49,8 @@ This project consists of two parts: a **Rails API** backend and a **React** fron
 
 ### Frontend (React)
 
-1. **Navigate to the frontend directory**:
+1. **Clone down the repository to your local machine**:
 
-   ```bash
-   cd <your-project-folder>/frontend
-   ```
 
 2. **Install dependencies**:
 
@@ -63,7 +61,7 @@ This project consists of two parts: a **Rails API** backend and a **React** fron
 3. **Start the React development server**:
 
    ```bash
-   npm start
+   npm run dev
    ```
 
    The frontend should now be running at `http://localhost:5173`.
@@ -91,5 +89,6 @@ This project consists of two parts: a **Rails API** backend and a **React** fron
 
 - Add user authentication and authorization.
 - Improve styling with a more refined design.
+- Add more endpoints to complete CRUD functionality in case the scope of the application needs to expand.
 
 ---
