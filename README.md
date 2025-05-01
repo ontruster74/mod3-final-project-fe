@@ -1,37 +1,95 @@
-# Things we'll be looking for:
+# Tea Subscription Admin Portal
 
-- A strong understanding of Rails, React and best practices
-- BE: Ability to create restful routes
-- BE: Demonstration of well-organized code, following OOP
-- BE: Test Driven Development
-- FE: An understanding of basic usability practices and standards
-- FE: A clear hierarchy of information
-- Clear documentation
-- Your ability to prioritize for MVP
-- Clean, well factored code
+This project consists of two parts: a **Rails API** backend and a **React** frontend. It is designed to manage subscriptions, associated customers, and teas.
 
-Try to limit your total time to approximately 8-10 hours each side of the stack. We recommend starting with the BE, and then moving onto the FE, but you are welcome to design your own workflow. Prioritize what is important to completing MVP and demonstrating your capabilities as a developer.
+---
 
+## Project Structure
 
-## Tea Subscription Service
+- **Backend (Rails API)**: Handles subscriptions, customers, and teas, and serves the data via API endpoints.
+- **Frontend (React)**: Consumes the API and displays subscription data to users with options for filtering, viewing details, and toggling subscription status.
 
-You will create a full stack application for a Tea Subscription Service, including a Rails API and a React front end. You do **NOT** need to deploy this app. 
+---
 
-### Front End
+## Getting Started
 
-Again, try to limit your total time on the FE to around 8-10 hours (including planning). Prioritize what is important to get this working and as close to MVP as possible. Please do not attempt to recreate an entire existing Tea Shop's website. We're interested in seeing your ability to write clean code to solve a problem with an understanding of basic UX. We're not looking for fancy UI tricks or hacks.
+### Backend (Rails API)
 
-### Tea Subscription React App
+1. **Clone the repository**:
 
-You will create a tea subscription application that consumes the Rails API you've just built. Feel free to use [this starter React repo](https://github.com/turingschool-examples/vite-react-starter).
+   ```bash
+   git clone <your-repository-url>
+   cd <your-project-folder>/backend
+   ```
 
-### Requirements:
+2. **Install dependencies**:
 
-At a minimum, you must show:
+   ```bash
+   bundle install
+   ```
 
-* List of subscriptions (name with an image or icon)
-* Detailed View of subscription (name, image or icon, description, tea(s) and customer(s) involved)
-* The ability to cancel a subscription (for one tea at a time or multiple teas) somewhere in the application
-* Some sort of search, filter, OR sort
+3. **Set up the database**:
 
-Beyond the base requirements, include any additional elements you'd like, just be mindful of your time. You don't need to go overboard, just consider what might be necessary to achieve MVP so that this app is easy-to-use, information is clear, and navigation is painless. Put yourself in a user's shoes and think about what you would need (or want). The app should be usable on desktop, tablet, and mobile devices.
+   ```bash
+   rails db:create
+   rails db:migrate
+   rails db:seed 
+   ```
+
+4. **Start the Rails server**:
+
+   ```bash
+   rails server
+   ```
+
+   The backend should now be running at `http://localhost:3000`.
+
+---
+
+### Frontend (React)
+
+1. **Navigate to the frontend directory**:
+
+   ```bash
+   cd <your-project-folder>/frontend
+   ```
+
+2. **Install dependencies**:
+
+   ```bash
+   npm install
+   ```
+
+3. **Start the React development server**:
+
+   ```bash
+   npm start
+   ```
+
+   The frontend should now be running at `http://localhost:5173`.
+
+---
+
+## Frontend Features
+
+- **Subscription List**: Displays all subscriptions with basic details.
+- **Subscription Details**: View detailed information of a specific subscription.
+- **Toggle Subscription Status**: Change subscription status between "active" and "cancelled".
+- **Filter Subscriptions**: Filter subscriptions by status (All, Active, Cancelled).
+
+---
+
+## Development Environment
+
+- **Backend**: Rails API
+- **Frontend**: React with Router for navigation
+- **Database**: PostgreSQL 
+
+---
+
+## Future Improvements
+
+- Add user authentication and authorization.
+- Improve styling with a more refined design.
+
+---

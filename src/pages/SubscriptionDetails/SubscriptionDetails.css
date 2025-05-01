@@ -3,7 +3,7 @@
     padding: 20px;
     border-radius: 6px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    max-width: 800px;
+    max-width: 1200px;
     margin: auto;
 }
   
@@ -24,7 +24,7 @@
 .back-link {
     display: inline-block;
     margin-bottom: 20px;
-    background-color: #cfcbcb;
+    background-color: #ffffff;
     text-decoration: none;
 }
   

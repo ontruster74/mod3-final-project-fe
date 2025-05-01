@@ -27,14 +27,14 @@ function SubscriptionDetails() {
       <h3>Customers</h3>
       <ul>
         {customers.map(customer => (
-          <li key={customer.id}>{customer.firstname} {customer.lastname} ({customer.email})</li>
+          <li key={customer.id}>{customer.firstname} {customer.lastname} ({customer.email} - {customer.address})</li>
         ))}
       </ul>
 
       <h3>Teas</h3>
       <ul>
         {teas.map(tea => (
-          <li key={tea.id}>{tea.name} - {tea.description}</li>
+          <li key={tea.id}>{tea.title} ({tea.temperature}° - {tea.brewtime} min) - {tea.description}</li>
         ))}
       </ul>
 
